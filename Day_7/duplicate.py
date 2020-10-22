@@ -1,3 +1,7 @@
+# Title  : Find matching elements
+# Author : Kiran raj R.
+# Date   : 21:10:2020
+
 userStr1 = input("Enter your first string :")
 userStr2 = input("Enter your second string :")
 
