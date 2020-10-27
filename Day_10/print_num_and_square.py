@@ -1,3 +1,7 @@
+# Title  : Print number and square as tuple
+# Author : Kiran raj R.
+# Date   : 24:10:2020
+
 userInput = input(
     "Enter the limit till you need to print the sqaure of numbers :")
 square_tup = ()

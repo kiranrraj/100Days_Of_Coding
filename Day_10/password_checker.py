@@ -1,3 +1,7 @@
+# Title  : Password Strength checker
+# Author : Kiran raj R.
+# Date   : 24:10:2020
+
 import re
 userInput = input("Enter a password to check the strength: ").strip()
 

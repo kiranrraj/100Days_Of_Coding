@@ -1,9 +1,14 @@
+# Title  : Linked list
+# Author : Kiran raj R.
+# Date   : 16:10:2020
+
 class Node:
     """Creates a node of a link list"""
 
-    def __init__(self,value):
+    def __init__(self, value):
         self.value = value
         self.link = None
+
 
 class SingleLinkedList:
 
@@ -28,13 +33,13 @@ class SingleLinkedList:
                 print(f"{elem.info} ", end="")
                 elem = elem.link
             print()
-    
+
     def numNodes(self):
         """Return the number of nodes in the linked list """
         elem = self.start
         count = 0
         while elem is not None:
-            count +=1
+            count += 1
         print(F"The link list contain(s) {count} nodes.")
 
     def searchNode(self, val):
@@ -44,7 +49,7 @@ class SingleLinkedList:
         while elem is not None:
             if elem.value == val:
                 print(f"The {val} is found at position {index}")
-            index+=1
+            index += 1
             elem = elem.link
         else:
             print(f"{val} not found !!")
@@ -64,7 +69,7 @@ class SingleLinkedList:
             elem = self.start
             while elem is not None:
                 elem = elem.link
-            elem.link = temp  
+            elem.link = temp
 
     def insert_before(self, new_val, val):
         """Insert a before after a node in linked list"""
@@ -76,7 +81,7 @@ class SingleLinkedList:
             new_elem = Node(new_val)
             new_elem.link = self.start
             self.start = new_elem
-            return 
+            return
 
         elem = self.start
         while elem.link is not None:
@@ -106,7 +111,6 @@ class SingleLinkedList:
             new_elem.link = elem.link
             elem.link = new_elem
 
-
     def del_firstNode(self):
         """Delete the first node in linked list"""
         if self.start == None:
@@ -127,7 +131,7 @@ class SingleLinkedList:
 
     def del_Node(self, val):
         """Delete a node in linked list"""
-        if self.start ==None:
+        if self.start == None:
             print("List is empty")
             return
         if self.start.info == val:
@@ -142,7 +146,7 @@ class SingleLinkedList:
         if elem.link is None:
             print(f"{val} not found in the linked list")
         elem.link = elem.linl.link
-        
+
     def reverse_LL(self):
         """To reverse a linked list"""
         prevElem = None
@@ -153,9 +157,6 @@ class SingleLinkedList:
             prevElem = elem
             elem = nextElem
         self.start = prevElem
-
-
-    
 
 
 list = SingleLinkedList()
