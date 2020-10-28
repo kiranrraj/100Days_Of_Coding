@@ -14,3 +14,11 @@ def bubble_sort(list):
 
 list = [3, 6, 2, 9, 7, 1, 5]
 print(bubble_sort(list))
+
+
+def bubble_sort(list_in):
+    for i in range(len(list_in)):
+        for j in range(0, len(list_in) - i - 1):
+
+            if list_in[j] > list_in[j + 1]:
+                list_in[j], list_in[j + 1] = list_in[j + 1], list_in[j]
