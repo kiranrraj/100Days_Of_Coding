@@ -1,5 +1,5 @@
-# Title  : Get binary numbers from user convert it into integer
-# and print if it is an even number.
+# Title  : Get binary numbers from user, convert it into integer
+#           and print if it is an even number.
 # Author : Kiran raj R.
 # Date   : 24:10:2020
 
