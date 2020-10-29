@@ -1,12 +1,13 @@
 # Title  : Remove Duplicate
 # Author : Kiran raj R.
-# Date   : 21:10:2020
+# Date   : 15:10:2020
 
 
 userInput = input("Enter a string to remove dupicate :").strip()
 
+
 def removeDuplicate(num):
-    num =list(num)
+    num = list(num)
     newList = []
     length = len(num)
 
@@ -18,5 +19,6 @@ def removeDuplicate(num):
             newList.append(num[i])
 
     return " ".join(newList)
+
 
 print(removeDuplicate(userInput))

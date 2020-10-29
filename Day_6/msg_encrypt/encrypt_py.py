@@ -1,3 +1,7 @@
+# Title  : Encryp/decrypt user message
+# Author : Kiran raj R.
+# Date   : 20:10:2020
+
 from tkinter import messagebox, simpledialog, Tk
 
 main = Tk()
