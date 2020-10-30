@@ -1,3 +1,7 @@
+# Title  : Json in python
+# Author : Kiran raj R.
+# Date   : 29:10:2020
+
 import json
 
 json_data = '{"fName":"Sachin", "lName":"Tendulkar", "Profession":"Cricketer"}'
