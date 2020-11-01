@@ -1,4 +1,3 @@
-
 # Title  : Generators in python
 # Author : Kiran raj R.
 # Date   : 30:10:2020
