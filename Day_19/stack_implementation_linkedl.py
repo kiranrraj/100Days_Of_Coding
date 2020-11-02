@@ -21,11 +21,19 @@ class Stack_imp:
             return False
 
     def length(self):
-        return len(self.stack)
+        if self.head == None:
+            return 0
+        else:
+            temp = self.head
+            count = 0
+            while temp != None:
+                count += 1
+                temp = temp.next
+        return count
 
     def print_stack(self):
         temp = self.head
-        if self.is_empty:
+        if self.head == None:
             print("Stack is empty")
             return
         else:
@@ -35,23 +43,31 @@ class Stack_imp:
         print()
 
     def add_item(self, item):
-        temp = self.head
+
         new_elem = Node(item)
-        while temp != None:
-            if temp.next == None:
-                temp.next = new_elem
-                return
-            temp = temp.next
+        if self.head == None:
+            self.head = new_elem
+            return
+        else:
+            temp = self.head
+            while temp != None:
+                if temp.next == None:
+                    temp.next = new_elem
+                    return
+                temp = temp.next
+        return
 
     def remove_item(self):
         temp = self.head
-        if self.is_empty():
+        if self.head == None:
             print("Stack is empty")
-
-        while temp != None:
-            if temp.next.next == None:
-                temp.next = None
-                return
+            return
+        else:
+            while temp != None:
+                if temp.next.next == None:
+                    temp.next = None
+                    return
+                temp = temp.next
 
 
 stack1 = Stack_imp()
@@ -64,8 +80,15 @@ stack1.add_item(10)
 stack1.add_item(20)
 stack1.add_item(30)
 stack1.add_item(40)
+
 print(stack1.is_empty())
+print(stack1.length())
+stack1.print_stack()
+
 stack1.remove_item()
 stack1.print_stack()
+print(stack1.length())
+
 stack1.remove_item()
 stack1.print_stack()
+print(stack1.length())
