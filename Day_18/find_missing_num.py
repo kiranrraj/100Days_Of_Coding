@@ -1,6 +1,6 @@
 # Title  : Find the missing number
 # Author : Kiran raj R.
-# Date   : 31:10:2020
+# Date   : 01:11:2020
 
 # limit = int(input("Enter the number of elements to be entered: "))
 # nums = []

@@ -1,6 +1,6 @@
 # Title  : Find the missing two numbers
 # Author : Kiran raj R.
-# Date   : 31:10:2020
+# Date   : 01:11:2020
 
 import math
 

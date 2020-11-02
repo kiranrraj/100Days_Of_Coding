@@ -1,6 +1,6 @@
 # Title  : Find the missing number between a limit
 # Author : Kiran raj R.
-# Date   : 31:10:2020
+# Date   : 01:11:2020
 
 
 def find_smallest(list_in):

@@ -1,6 +1,6 @@
 # Title  : Lambda example
 # Author : Kiran raj R.
-# Date   : 30:10:2020
+# Date   : 31:10:2020
 
 def higher_o_func(x, func): return x + func(x)
 

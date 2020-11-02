@@ -1,6 +1,6 @@
 # Title  : Map function in python
 # Author : Kiran raj R.
-# Date   : 30:10:2020
+# Date   : 31:10:2020
 
 def getSquare(n):
     return n * n

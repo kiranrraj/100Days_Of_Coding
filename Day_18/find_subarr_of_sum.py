@@ -1,6 +1,6 @@
 # Title  : Find sub array of specified sum
 # Author : Kiran raj R.
-# Date   : 31:10:2020
+# Date   : 01:11:2020
 
 def find_sub_array(list_in, sum_list):
 
