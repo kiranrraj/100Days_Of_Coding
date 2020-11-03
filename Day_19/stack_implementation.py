@@ -29,18 +29,15 @@ class Stack_imp:
         self.stack.append(item)
         print(f"{item} added. Stack now: {self.stack}")
 
-    def remove_item(self, item):
+    def remove_item(self):
         i = 0
         if self.is_empty():
             print("Stack is empty")
-
-        while i < self.length():
-            if self.stack[i] == item:
-                return self.stack.pop(i)
-            i += 1
-        else:
-            print(f"{item} not found in {self.stack}")
             return
+        else:
+            del_item = self.stack[-1]
+            self.stack.pop()
+            print(f"{del_item} deleted. Stack now: {self.stack}")
 
 
 stack1 = Stack_imp()
@@ -54,7 +51,5 @@ stack1.add_item(20)
 stack1.add_item(30)
 stack1.add_item(40)
 print(stack1.is_empty())
-stack1.remove_item(30)
-stack1.print_stack()
-stack1.remove_item(30)
-stack1.print_stack()
+stack1.remove_item()
+stack1.remove_item()
