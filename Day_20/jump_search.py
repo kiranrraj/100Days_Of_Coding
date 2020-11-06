@@ -3,21 +3,24 @@
 # Date   : 03:11:2020
 
 import math
+arr = [2,5,7,9,11,14,17,19,21]
+num = 17
+length = len(arr)
+jump = int(math.sqrt(length))
+left = 0
 
-def jump_search(num,len,arr):
-    step = int(math.sqrt(len))
-    prev = 0
+while(arr[min(jump, length)-1]<num):
+    left = jump
+    jump+= int(math.sqrt(length))
 
-    while arr[min(step, len)-1] < num:
-        prev = step
-        step+= math.sqrt(len)
-        if prev >= len:
-            return -1
-    while arr[int(prev)] < num:
-        prev += 1
+    if(left>=length):
+        break
 
-        if prev == min(step, len):
-            return -1
-    if arr[int(prev)] == num:
-        return prev
-    return -1
+while(arr[left]<num):
+    left =left + 1
+
+    if(left== min(jump, length)):
+        break
+    
+if(arr[left]==num):
+        print(f"{arr[left]} found at index {left+1}")

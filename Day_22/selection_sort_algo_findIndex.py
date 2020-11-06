@@ -1,3 +1,7 @@
+# Title  : Selection sort Method#2
+# Author : Kiran Raj R.
+# Date   : 05:11:2020
+
 def findIndex(arr):
     smallest = arr[0]
     smallest_index = 0
