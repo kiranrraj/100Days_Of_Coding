@@ -37,4 +37,11 @@ class Employee(EmployeeDetail, EmployeeSalary):
         EmployeeDetail.__init__(self, emp_id, name, age, email_id, positon)
         EmployeeSalary.__init__(self, basic, da, target, bonus)
 
+    def print_details(self):
+        EmployeeDetail.print_details(self)
+        print(f"Salary: {self.salary}")
+
 emp1 = Employee(121, "kiran", 32, "kiran@g.com", "sales_manager", 22000, 5000, True, True)
+emp1.print_details()
+emp1.calcSalary()
+emp1.print_details()
