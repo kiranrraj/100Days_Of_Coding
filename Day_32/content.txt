@@ -1,0 +1,49 @@
+Pages must continue to work when style sheets are disabled: for example, 
+do not use tricks where the same words are repeated multiple times with 
+small offsets to create shadow effects (without the intended style, the 
+text turns into gibberish). Retaining a decent presentation without the 
+style sheet is mandatory to support users with older browsers, blind users, 
+and users who need to disable the style feature in their browser 
+(either because of bugs or because your style conflicts too much with 
+their preferences). Luckily, it is very easy to check conformance with 
+this rule: simply disable style sheets in your browser and reload the page.
+
+Do not use more than two fonts (plus possibly a third for special text 
+like computer code ). Remember the lesson from the early days of desktop 
+publishing: using a lot of fonts simply because you can will result in a 
+ransom-note look. Typically, you can use one typeface for body text and 
+another, bolder, face for headings. Note that it is fine (indeed, 
+recommended) to use a long list of alternate fonts in the style sheet 
+specification for a given class of text: the user's browser will pick 
+the first available font in the list and use it throughout your pages, 
+meaning that the user will see a single font, making the site feel 
+typographically unified. It is important that lists of font names have 
+the fonts listed in the same order, since the browser picks the first 
+one it has available.
+
+Do not use absolute font sizes; instead specify all text relative to 
+the base font size defined by the user's preference setting. For example, 
+large text could be defined as "200%", meaning that it would be set as 24 
+point if the user preferred 12 point for body text and 20 point if the user 
+preferred 10 point for body text. Whether people prefer large or small 
+fonts depends on a variety of questions, including the size and resolution 
+of their monitors and the user's eyesight. It is somewhat annoying to visit 
+a website where the text is too small for comfortable reading under my 
+circumstances, but it is very annoying to click on the "make text bigger" 
+button and have nothing happen because the font sizes were defined as an 
+absolute number of points.
+
+Do not use the !important attribute to override the user's settings. 
+It is hard to imagine cases where you are justified in ignoring the user's 
+preferences if the user felt strongly enough to use his or her own 
+!important rating, so !important should be reserved for user style sheets.
+
+If you have multiple style sheets, then make sure to use the same CLASS 
+names for the same concept in all of the style sheets. Content creators 
+using two or more style sheets will be confused if different CLASSes are 
+used for the same thing or if one style sheet has a CLASS that is missing 
+in the other style sheet even though the concept applied in both cases. 
+If, for example, you have a CLASS for the name of the author of a document, 
+hen all of your style sheets should have this CLASS, even though it may 
+be defined to render differently, as appropriate for the different kinds 
+of documents.
