@@ -8,4 +8,4 @@ with open ('content.txt') as file:
         for word in line.split():
             count+=1
             print(word)
-    print(f"Number od words in the file is: {count}")
+    print(f"Number of words in the file is: {count}")
