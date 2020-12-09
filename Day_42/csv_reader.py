@@ -10,3 +10,5 @@ file_reader = csv.reader(file_read);
 #Convert the reader object into list
 file_data = list(file_reader);
 print(file_data);
+print('-'*40);
+print(f"{file_data[0][0]} --- {file_data[0][1]}");
