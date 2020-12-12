@@ -13,4 +13,9 @@ for index_1 in range(len(list_1)):
 print("-" * 100)
 
 for count, val in enumerate(list_1):
-    print(f"key:{key}  index:{count}")
+    print(f"key:{val}  index:{count}")
+
+print("-" * 100)
+
+for count_1, val_1 in enumerate(list_1, start=2):
+    print(f"key:{val_1}  index:{count_1}")
