@@ -1,4 +1,8 @@
-import sys
+# Title  : Pyqt5
+# Author : Kiran Raj R.
+# Date   : 23/11/2020
+
+mport sys
 
 from PyQt5.QtWidgets import (
     QApplication,

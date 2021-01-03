@@ -1,3 +1,7 @@
+# Title  : Csv Module
+# Author : Kiran Raj R.
+# Date   : 25/11/2020
+
 import csv
 
 out_file = open('out.csv', 'w', newline="")

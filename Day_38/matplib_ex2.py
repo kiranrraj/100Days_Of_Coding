@@ -1,3 +1,7 @@
+# Title  : Matplotlib
+# Author : Kiran Raj R.
+# Date   : 21/11/2020
+
 from matplotlib import pyplot as plt
 from matplotlib import style
 import numpy as np
