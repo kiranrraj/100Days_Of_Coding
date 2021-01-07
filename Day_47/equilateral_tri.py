@@ -1,3 +1,7 @@
+# Title  : Equilateral triangle or not
+# Author : Kiran Raj R.
+# Date   : 30/11/2020
+
 import math
 side, area, perimeter, semi_p, altitude = 0.0, 0.0, 0.0, 0.0, 0.0
 

@@ -1,3 +1,7 @@
+# Title  : Count Capitals
+# Author : Kiran Raj R.
+# Date   : 29/11/2020
+
 import os
 os.chdir("D:\\gitHub\\100Days_Of_Coding\\Day_46")
 with open('text_file.txt') as t:

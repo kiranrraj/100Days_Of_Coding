@@ -1,3 +1,7 @@
+# Title  : Rectangle Calculations
+# Author : Kiran Raj R.
+# Date   : 1/12/2020
+
 length, width, area = 0.0, 0.0, 0.0
 length = float(input("Enter the length of the rectangle: "))
 width = float(input("Enter the width of the rectangle: "))

@@ -1,3 +1,7 @@
+# Title  : Count Capitals
+# Author : Kiran Raj R.
+# Date   : 30/11/2020
+
 angles = []
 total = 0
 

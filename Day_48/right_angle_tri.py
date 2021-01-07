@@ -1,3 +1,7 @@
+# Title  : Triangle Calculations
+# Author : Kiran Raj R.
+# Date   : 1/12/2020
+
 import math
 
 width = float(input("Enter the width length of the triangle: "))

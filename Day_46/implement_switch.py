@@ -1,3 +1,7 @@
+# Title  : Implement switch
+# Author : Kiran Raj R.
+# Date   : 29/11/2020
+
 def switch_py(c):
     val_dict  = {
         'one': "Monday",

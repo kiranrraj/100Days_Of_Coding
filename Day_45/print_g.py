@@ -1,4 +1,8 @@
-# Python program to print pattern G 
+# Title  : Python program to print pattern G 
+# Author : Kiran Raj R.
+# Date   : 28/11/2020
+
+# 
 def Pattern(line): 
     pat="" 
     for i in range(0,line):     
