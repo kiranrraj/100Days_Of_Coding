@@ -1,4 +1,4 @@
-# Title  : Count Capitals
+# Title  : Triangle or not
 # Author : Kiran Raj R.
 # Date   : 30/11/2020
 
