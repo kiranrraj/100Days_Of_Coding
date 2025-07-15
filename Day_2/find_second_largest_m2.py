@@ -10,3 +10,8 @@ def find_second_largest(arr):
     return nums[1]
 
 print(find_second_largest([20,30,20,10,5,50]))
+
+# Time complexity O(n log n)  
+# O(n) for set(arr) — creating a set takes linear time.
+# O(k log k) for sort() — where k is the number of unique elements in arr.
+# Space complexity O(k)
