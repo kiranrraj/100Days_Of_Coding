@@ -1,6 +1,6 @@
-# Title  : Find the second largest number (Method-2)
-# Author : Kiran raj R.
-# Date   : 14/07/2025
+# Author    : Kiran raj R.
+# Date      : 20/08/2025
+# Question  : Find the second largest number (Method-2)
 
 def find_second_largest(arr):
     nums = list(set(arr))
