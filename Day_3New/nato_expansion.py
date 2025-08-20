@@ -1,7 +1,6 @@
-# Title  : Nato Phonetic Expansion
-# Author : Kiran raj R.
-# Date   : 17:10:2020
-
+# Author    : Kiran raj R.
+# Date      : 21/08/2025
+# Question  : Nato Phonetic Expansion
 
 phonetic_alphabet = {
     'a': 'alpha',

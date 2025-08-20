@@ -1,9 +1,8 @@
-# Title  : Prime Number
-# Author : Kiran raj R.
-# Date   : 16:10:2020
+# Author    : Kiran raj R.
+# Date      : 21/08/2025
+# Question  : Prime Number
 
 userInput = int(input("Enter a number : "))
-
 
 def isPrime(userNum):
     if userNum in [0, 1]:
