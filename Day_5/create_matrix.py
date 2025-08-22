@@ -1,16 +1,42 @@
-# Title  : Create matrix
-# Author : Kiran raj R.
-# Date   : 19:10:2020
+# Author    : Kiran raj R.
+# Date      : 22/08/2025
+# Question  : Create matrix
 
-matrix1 = []
-for i in range(1, 6):
-    sub_matrix = []
-    for j in range(1, 4):
-        sub_matrix.append(i*j)
-    matrix1.append(sub_matrix)
 
-print(f"Generated matrix 1 : {matrix1}")
+def createMatrix(row=2, column=2, fill=None):
+    matrix = []
+    
+    i = j = 0
+    for i in range(row):
+        subMatrix = []
+        for j in range (column):
+            if fill is None:
+                subMatrix.append(j)
+            else:
+                subMatrix.append(fill)
+        matrix.append(subMatrix)
+    return matrix
 
-sub_matrix2 = [j for j in range(1, 6)]
-matrix2 = [[i*x for i in range(1, 4)] for x in sub_matrix2]
-print(f"Generated matrix 2 : {matrix2}")
+# Time complexity:    O(n*m)
+# Space complexity:   O(n*m)
+
+
+def print_matrix(matrix):
+    if not matrix:
+        print("The matrix is empty.")
+        return
+
+    print("[")
+    for i, row in enumerate(matrix):
+        # Use a list comprehension to convert each element to a string
+        # and then join them with spaces.
+        row_str = ", ".join(map(str, row))
+        print(f" [{row_str}]", end="")
+        # Add a comma and newline if it's not the last row
+        if i < len(matrix) - 1:
+            print(",")
+    print("\n]")
+
+
+# Test
+print_matrix(createMatrix(3,3,1))
