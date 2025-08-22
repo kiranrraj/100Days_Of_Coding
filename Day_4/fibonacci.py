@@ -1,7 +1,10 @@
-# Title  : Fibonacci
-# Author : Kiran raj R.
-# Date   : 18:10:2020
+# Author    : Kiran raj R.
+# Date      : 21/08/2025
+# Question  : Fibonacci
 
+
+# The Fibonacci sequence is a series of numbers where each number is the 
+# sum of the two that precede it. The sequence typically starts with 0 and 1
 def fibonacci(num):
     output = []
     f1 = 0
@@ -15,10 +18,14 @@ def fibonacci(num):
     return output
 
 
+# Test
 try:
-    userInput = input(
-        "Enter the number of elements you need in a fibonacci series : ")
+    userInput = input("Enter count of elements in the fibonacci series: ") or 10
     limit = int(userInput)
     print(f"Fibonacci series with {limit} elements => {fibonacci(limit)}")
 except:
-    print("Please enter a valid number with no decimal places")
+    print("Please enter a valid number.")
+
+
+# Time complexity:    O(n)
+# Space complexity:   O(n)
