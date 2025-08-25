@@ -1,5 +1,5 @@
 # Author    : Kiran raj R.
-# Date      : 21/08/2025
+# Date      : 20/08/2025
 # Question  : Prime Number
 
 userInput = int(input("Enter a number : "))
